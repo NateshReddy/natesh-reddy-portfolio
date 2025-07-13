@@ -24,11 +24,11 @@ const About = () => {
     <section id="about" className="py-20 bg-section-gradient">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Core Expertise
+          <h2 className="text-5xl md:text-6xl font-bold text-foreground mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+            Excellence in AI
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Bridging cutting-edge research with practical AI solutions
+            Distinguished expertise across cutting-edge research and enterprise solutions
           </p>
         </div>
 
@@ -38,17 +38,17 @@ const About = () => {
             return (
               <Card 
                 key={index} 
-                className="group hover:shadow-card-hover transition-all duration-300 animate-scale-in border-border/50"
+                className="group hover:shadow-luxury-glow transition-all duration-500 animate-scale-in bg-glass-bg backdrop-blur-luxury border-primary/20 hover:border-primary/40"
                 style={{ animationDelay: `${index * 0.2}s` }}
               >
-                <CardContent className="p-8 text-center">
-                  <div className="inline-flex items-center justify-center w-16 h-16 bg-skill-bg rounded-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
-                    <Icon className="h-8 w-8 text-primary" />
+                <CardContent className="p-10 text-center">
+                  <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-primary/20 to-accent/20 rounded-3xl mb-8 group-hover:scale-110 transition-transform duration-500 shadow-card border border-primary/20">
+                    <Icon className="h-10 w-10 text-primary" />
                   </div>
-                  <h3 className="text-xl font-semibold text-foreground mb-4">
+                  <h3 className="text-2xl font-semibold text-foreground mb-6 group-hover:text-primary transition-colors duration-300">
                     {item.title}
                   </h3>
-                  <p className="text-muted-foreground leading-relaxed">
+                  <p className="text-muted-foreground leading-relaxed text-lg">
                     {item.description}
                   </p>
                 </CardContent>

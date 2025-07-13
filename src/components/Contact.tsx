@@ -7,40 +7,39 @@ const Contact = () => {
     <section id="contact" className="py-20 bg-hero-gradient">
       <div className="container mx-auto px-6 text-center">
         <div className="max-w-4xl mx-auto animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold text-primary-foreground mb-6">
-            Let's Connect
+          <h2 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+            Elite Partnership
           </h2>
-          <p className="text-xl text-primary-foreground/80 mb-12 max-w-2xl mx-auto">
-            Looking for 2025 New Grad opportunities in AI, Machine Learning, and NLP. 
-            I bring a strong research background and industry experience in developing cutting-edge AI solutions.
+          <p className="text-xl text-foreground/80 mb-12 max-w-2xl mx-auto leading-relaxed">
+            Seeking distinguished opportunities in AI leadership and innovation. 
+            Ready to drive transformational AI initiatives at the highest levels.
           </p>
           
-          <Card className="bg-primary-foreground/10 backdrop-blur-sm border-primary-foreground/20 mb-12">
-            <CardContent className="p-8">
-              <p className="text-primary-foreground/90 text-lg leading-relaxed">
-                Reach out to discuss how my skills in NLP, computer vision, and deep learning 
-                can benefit your organization. I'm passionate about translating research into 
-                impactful real-world applications.
+          <Card className="bg-glass-bg backdrop-blur-luxury border-primary/30 mb-12 shadow-luxury-glow">
+            <CardContent className="p-10">
+              <p className="text-foreground/90 text-xl leading-relaxed font-light">
+                Connect for executive-level discussions on strategic AI implementations, 
+                cutting-edge research collaborations, and transformational technology leadership.
               </p>
             </CardContent>
           </Card>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-3xl mx-auto">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-4xl mx-auto">
             <Button 
               size="lg" 
-              className="bg-accent hover:bg-accent-glow text-accent-foreground shadow-lg hover:shadow-xl transition-all duration-300"
+              className="bg-primary hover:bg-primary-glow text-primary-foreground shadow-luxury-glow hover:shadow-card-hover transition-all duration-500 py-6 text-lg font-medium"
               asChild
             >
               <a href="mailto:natesh@example.com" className="flex items-center justify-center">
-                <Mail className="mr-2 h-5 w-5" />
-                Email
+                <Mail className="mr-3 h-6 w-6" />
+                Executive Contact
               </a>
             </Button>
             
             <Button 
               variant="outline" 
               size="lg"
-              className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 backdrop-blur-sm"
+              className="border-primary/50 text-foreground hover:bg-primary/10 backdrop-blur-luxury bg-glass-bg py-6 text-lg font-medium"
               asChild
             >
               <a 
@@ -49,15 +48,15 @@ const Contact = () => {
                 rel="noopener noreferrer"
                 className="flex items-center justify-center"
               >
-                <Linkedin className="mr-2 h-5 w-5" />
-                LinkedIn
+                <Linkedin className="mr-3 h-6 w-6" />
+                LinkedIn Network
               </a>
             </Button>
             
             <Button 
               variant="outline" 
               size="lg"
-              className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 backdrop-blur-sm"
+              className="border-primary/50 text-foreground hover:bg-primary/10 backdrop-blur-luxury bg-glass-bg py-6 text-lg font-medium"
               asChild
             >
               <a 
@@ -66,18 +65,18 @@ const Contact = () => {
                 rel="noopener noreferrer"
                 className="flex items-center justify-center"
               >
-                <Github className="mr-2 h-5 w-5" />
-                GitHub
+                <Github className="mr-3 h-6 w-6" />
+                GitHub Portfolio
               </a>
             </Button>
             
             <Button 
               variant="outline" 
               size="lg"
-              className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 backdrop-blur-sm"
+              className="border-primary/50 text-foreground hover:bg-primary/10 backdrop-blur-luxury bg-glass-bg py-6 text-lg font-medium"
             >
-              <FileText className="mr-2 h-5 w-5" />
-              Resume
+              <FileText className="mr-3 h-6 w-6" />
+              Executive CV
             </Button>
           </div>
         </div>
