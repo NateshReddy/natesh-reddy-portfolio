@@ -128,19 +128,14 @@ export default {
 			backgroundImage: {
 				'hero-gradient': 'var(--hero-gradient)',
 				'section-gradient': 'var(--section-gradient)',
-				'skill-bg': 'var(--skill-bg)',
-				'glass-bg': 'var(--glass-bg)'
+				'skill-bg': 'var(--skill-bg)'
 			},
 			boxShadow: {
 				'card': 'var(--card-shadow)',
-				'card-hover': 'var(--card-shadow-hover)',
-				'luxury-glow': 'var(--luxury-glow)'
+				'card-hover': 'var(--card-shadow-hover)'
 			},
 			transitionTimingFunction: {
 				'smooth': 'var(--transition-smooth)'
-			},
-			backdropBlur: {
-				'luxury': '20px'
 			}
 		}
 	},
