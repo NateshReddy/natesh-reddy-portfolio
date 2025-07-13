@@ -8,44 +8,44 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 220 20% 97%;
-    --foreground: 220 15% 15%;
+    --background: 320 30% 96%;
+    --foreground: 240 15% 25%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 220 15% 15%;
+    --card: 0 0% 98%;
+    --card-foreground: 240 15% 25%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 220 15% 15%;
+    --popover: 0 0% 98%;
+    --popover-foreground: 240 15% 25%;
 
-    --primary: 220 70% 50%;
+    --primary: 300 35% 75%;
     --primary-foreground: 0 0% 98%;
-    --primary-glow: 220 70% 60%;
+    --primary-glow: 300 45% 80%;
 
-    --secondary: 220 10% 94%;
-    --secondary-foreground: 220 15% 25%;
+    --secondary: 200 25% 88%;
+    --secondary-foreground: 240 15% 35%;
 
-    --muted: 220 10% 96%;
-    --muted-foreground: 220 10% 45%;
+    --muted: 220 20% 92%;
+    --muted-foreground: 240 10% 50%;
 
-    --accent: 215 85% 55%;
+    --accent: 150 30% 75%;
     --accent-foreground: 0 0% 98%;
-    --accent-glow: 215 85% 65%;
+    --accent-glow: 150 40% 80%;
 
-    --destructive: 0 84% 60%;
+    --destructive: 10 40% 75%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 220 15% 88%;
-    --input: 220 15% 88%;
-    --ring: 220 70% 50%;
+    --border: 240 15% 85%;
+    --input: 240 15% 85%;
+    --ring: 300 35% 75%;
 
     --radius: 0.75rem;
 
     /* Portfolio-specific design tokens */
-    --hero-gradient: linear-gradient(135deg, hsl(220 70% 50%), hsl(215 85% 55%));
-    --section-gradient: linear-gradient(180deg, hsl(220 20% 97%), hsl(220 10% 96%));
-    --card-shadow: 0 4px 20px -4px hsl(220 70% 50% / 0.1);
-    --card-shadow-hover: 0 8px 30px -4px hsl(220 70% 50% / 0.2);
-    --skill-bg: linear-gradient(135deg, hsl(220 70% 50% / 0.1), hsl(215 85% 55% / 0.1));
+    --hero-gradient: linear-gradient(135deg, hsl(300 35% 75%), hsl(150 30% 75%));
+    --section-gradient: linear-gradient(180deg, hsl(320 30% 96%), hsl(220 20% 92%));
+    --card-shadow: 0 4px 20px -4px hsl(300 35% 75% / 0.15);
+    --card-shadow-hover: 0 8px 30px -4px hsl(300 35% 75% / 0.25);
+    --skill-bg: linear-gradient(135deg, hsl(300 35% 75% / 0.15), hsl(150 30% 75% / 0.15));
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
     --sidebar-background: 0 0% 98%;
