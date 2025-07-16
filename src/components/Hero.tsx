@@ -34,13 +34,9 @@ const Hero = () => {
               Get In Touch
               <ExternalLink className="ml-2 h-5 w-5" />
             </Button>
-            <Button variant="outline" size="lg" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 backdrop-blur-sm">
-              <a
-                href="https://drive.google.com/file/d/1His-NqbfK3e5Z1WF_Z27OEy12qhrTnxa/view"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="GitHub"
-              ></a>
+            <Button variant="outline" size="lg" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 backdrop-blur-sm" 
+            onClick={() => window.open("https://drive.google.com/uc?export=download&id=1His-NqbfK3e5Z1WF_Z27OEy12qhrTnx", "_blank")}
+            >  
               Resume
               <Download className="ml-2 h-5 w-5" />
             </Button>
