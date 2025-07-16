@@ -1,10 +1,13 @@
 import { useState, useEffect } from "react";
 import { Menu, X, Github, Linkedin, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useNavigate, useLocation } from "react-router-dom";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -15,7 +18,19 @@ const Header = () => {
   }, []);
 
   const scrollToSection = (sectionId: string) => {
-    document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
+    if (location.pathname !== '/') {
+      navigate('/');
+      setTimeout(() => {
+        document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
+      }, 100);
+    } else {
+      document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
+    }
+    setIsMobileMenuOpen(false);
+  };
+
+  const handleConnectClick = () => {
+    navigate('/connect');
     setIsMobileMenuOpen(false);
   };
 
@@ -50,6 +65,18 @@ const Header = () => {
                 {item.label}
               </button>
             ))}
+            <button
+              onClick={handleConnectClick}
+              className="text-muted-foreground hover:text-foreground transition-colors duration-200"
+            >
+              Let's Connect
+            </button>
+            <button
+              onClick={() => navigate('/color-schemes')}
+              className="text-muted-foreground hover:text-foreground transition-colors duration-200"
+            >
+              Themes
+            </button>
           </div>
 
           {/* Social Links */}
@@ -108,6 +135,18 @@ const Header = () => {
                   {item.label}
                 </button>
               ))}
+              <button
+                onClick={handleConnectClick}
+                className="text-left text-muted-foreground hover:text-foreground transition-colors duration-200"
+              >
+                Let's Connect
+              </button>
+              <button
+                onClick={() => navigate('/color-schemes')}
+                className="text-left text-muted-foreground hover:text-foreground transition-colors duration-200"
+              >
+                Themes
+              </button>
               <div className="flex items-center space-x-4 pt-4 border-t border-border">
                 <Button variant="ghost" size="icon" asChild>
                   <a href="https://github.com" target="_blank" rel="noopener noreferrer">

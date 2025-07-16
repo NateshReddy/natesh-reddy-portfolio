@@ -8,44 +8,45 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 320 30% 96%;
-    --foreground: 240 15% 25%;
+    /* Professional Pastel Scheme - Powder Blue & Mint */
+    --background: 210 10% 98%;
+    --foreground: 220 40% 25%;
 
-    --card: 0 0% 98%;
-    --card-foreground: 240 15% 25%;
+    --card: 210 15% 97%;
+    --card-foreground: 220 40% 25%;
 
-    --popover: 0 0% 98%;
-    --popover-foreground: 240 15% 25%;
+    --popover: 210 15% 97%;
+    --popover-foreground: 220 40% 25%;
 
-    --primary: 300 35% 75%;
-    --primary-foreground: 0 0% 98%;
-    --primary-glow: 300 45% 80%;
+    --primary: 200 35% 75%;
+    --primary-foreground: 220 40% 25%;
+    --primary-glow: 200 45% 80%;
 
-    --secondary: 200 25% 88%;
-    --secondary-foreground: 240 15% 35%;
+    --secondary: 200 25% 92%;
+    --secondary-foreground: 220 40% 35%;
 
-    --muted: 220 20% 92%;
-    --muted-foreground: 240 10% 50%;
+    --muted: 200 20% 94%;
+    --muted-foreground: 220 20% 45%;
 
-    --accent: 150 30% 75%;
-    --accent-foreground: 0 0% 98%;
-    --accent-glow: 150 40% 80%;
+    --accent: 160 30% 75%;
+    --accent-foreground: 220 40% 25%;
+    --accent-glow: 160 40% 80%;
 
-    --destructive: 10 40% 75%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive: 10 35% 65%;
+    --destructive-foreground: 210 10% 98%;
 
-    --border: 240 15% 85%;
-    --input: 240 15% 85%;
-    --ring: 300 35% 75%;
+    --border: 200 15% 88%;
+    --input: 200 15% 88%;
+    --ring: 200 35% 75%;
 
     --radius: 0.75rem;
 
-    /* Portfolio-specific design tokens */
-    --hero-gradient: linear-gradient(135deg, hsl(300 35% 75%), hsl(150 30% 75%));
-    --section-gradient: linear-gradient(180deg, hsl(320 30% 96%), hsl(220 20% 92%));
-    --card-shadow: 0 4px 20px -4px hsl(300 35% 75% / 0.15);
-    --card-shadow-hover: 0 8px 30px -4px hsl(300 35% 75% / 0.25);
-    --skill-bg: linear-gradient(135deg, hsl(300 35% 75% / 0.15), hsl(150 30% 75% / 0.15));
+    /* Portfolio-specific design tokens - Enhanced for text visibility */
+    --hero-gradient: linear-gradient(135deg, hsl(200 35% 75%), hsl(160 30% 75%));
+    --section-gradient: linear-gradient(180deg, hsl(210 10% 98%), hsl(200 25% 92%));
+    --card-shadow: 0 4px 20px -4px hsl(200 35% 75% / 0.12);
+    --card-shadow-hover: 0 8px 30px -4px hsl(200 35% 75% / 0.18);
+    --skill-bg: linear-gradient(135deg, hsl(200 35% 75% / 0.12), hsl(160 30% 75% / 0.12));
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
     --sidebar-background: 0 0% 98%;
