@@ -1,19 +1,17 @@
 import { ArrowDown, Download, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import heroBg from "@/assets/hero-bg.jpg";
-
 const Hero = () => {
   const scrollToSection = (sectionId: string) => {
-    document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
+    document.getElementById(sectionId)?.scrollIntoView({
+      behavior: "smooth"
+    });
   };
-
-  return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+  return <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${heroBg})` }}
-      />
+      <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
+      backgroundImage: `url(${heroBg})`
+    }} />
       <div className="absolute inset-0 bg-hero-gradient opacity-85" />
       <div className="absolute inset-0 bg-background/20" />
 
@@ -32,19 +30,11 @@ const Hero = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button 
-              size="lg" 
-              className="bg-accent hover:bg-accent-glow text-accent-foreground shadow-lg hover:shadow-xl transition-all duration-300"
-              onClick={() => scrollToSection("contact")}
-            >
+            <Button size="lg" className="bg-accent hover:bg-accent-glow text-accent-foreground shadow-lg hover:shadow-xl transition-all duration-300" onClick={() => scrollToSection("contact")}>
               Get In Touch
               <ExternalLink className="ml-2 h-5 w-5" />
             </Button>
-            <Button 
-              variant="outline" 
-              size="lg"
-              className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 backdrop-blur-sm"
-            >
+            <Button variant="outline" size="lg" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 backdrop-blur-sm">
               Download Resume
               <Download className="ml-2 h-5 w-5" />
             </Button>
@@ -53,16 +43,11 @@ const Hero = () => {
 
         {/* Scroll indicator */}
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <button
-            onClick={() => scrollToSection("about")}
-            className="p-2 rounded-full bg-primary-foreground/10 backdrop-blur-sm hover:bg-primary-foreground/20 transition-colors duration-300"
-          >
-            <ArrowDown className="h-6 w-6 text-primary-foreground" />
+          <button onClick={() => scrollToSection("about")} className="p-2 rounded-full bg-primary-foreground/10 backdrop-blur-sm hover:bg-primary-foreground/20 transition-colors duration-300">
+            
           </button>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
