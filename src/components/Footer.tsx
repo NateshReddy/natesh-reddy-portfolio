@@ -5,7 +5,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <div>
             <p className="text-sm">
-              © 2024 Natesh Reddy. All rights reserved.
+              © 2025 Natesh Reddy. All rights reserved.
             </p>
           </div>
           <div>
