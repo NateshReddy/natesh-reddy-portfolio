@@ -126,17 +126,17 @@ const Header = () => {
               ))}
               <div className="flex items-center space-x-4 pt-4 border-t border-border">
                 <Button variant="ghost" size="icon" asChild>
-                  <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                  <a href="https://github.com/NateshReddy" target="_blank" rel="noopener noreferrer">
                     <Github className="h-5 w-5" />
                   </a>
                 </Button>
                 <Button variant="ghost" size="icon" asChild>
-                  <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.linkedin.com/in/nateshreddy/" target="_blank" rel="noopener noreferrer">
                     <Linkedin className="h-5 w-5" />
                   </a>
                 </Button>
                 <Button variant="ghost" size="icon" asChild>
-                  <a href="mailto:natesh@example.com">
+                  <a href="mailto:natesh1199@gmail.com">
                     <Mail className="h-5 w-5" />
                   </a>
                 </Button>
