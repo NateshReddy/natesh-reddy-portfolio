@@ -35,10 +35,11 @@ const Header = () => {
   };
 
   const navItems = [
-    { label: "About", id: "about" },
+    { label: "Core Expertise", id: "about" },
     { label: "Experience", id: "experience" },
     { label: "Projects", id: "projects" },
     { label: "Skills", id: "skills" },
+    { label: "Education and Publication", id: "education" },
     { label: "Contact", id: "contact" }
   ];
 
@@ -65,18 +66,6 @@ const Header = () => {
                 {item.label}
               </button>
             ))}
-            <button
-              onClick={handleConnectClick}
-              className="text-muted-foreground hover:text-foreground transition-colors duration-200"
-            >
-              Let's Connect
-            </button>
-            <button
-              onClick={() => navigate('/color-schemes')}
-              className="text-muted-foreground hover:text-foreground transition-colors duration-200"
-            >
-              Themes
-            </button>
           </div>
 
           {/* Social Links */}
@@ -135,18 +124,6 @@ const Header = () => {
                   {item.label}
                 </button>
               ))}
-              <button
-                onClick={handleConnectClick}
-                className="text-left text-muted-foreground hover:text-foreground transition-colors duration-200"
-              >
-                Let's Connect
-              </button>
-              <button
-                onClick={() => navigate('/color-schemes')}
-                className="text-left text-muted-foreground hover:text-foreground transition-colors duration-200"
-              >
-                Themes
-              </button>
               <div className="flex items-center space-x-4 pt-4 border-t border-border">
                 <Button variant="ghost" size="icon" asChild>
                   <a href="https://github.com" target="_blank" rel="noopener noreferrer">

@@ -102,14 +102,17 @@ const Projects = () => {
                   </div>
                   
                   <div className="flex gap-2">
-                    <Button variant="outline" size="sm" className="flex-1">
-                      <Github className="h-4 w-4 mr-2" />
-                      Code
-                    </Button>
-                    <Button variant="outline" size="sm" className="flex-1">
-                      <ExternalLink className="h-4 w-4 mr-2" />
-                      Demo
-                    </Button>
+                    {project.title === "Leveraging LLMs for Biomedical Named Entity and Relation Extraction" ? (
+                      <Button variant="outline" size="sm" className="flex-1" disabled>
+                        <Github className="h-4 w-4 mr-2" />
+                        Research Paper
+                      </Button>
+                    ) : (
+                      <Button variant="outline" size="sm" className="flex-1">
+                        <Github className="h-4 w-4 mr-2" />
+                        Code
+                      </Button>
+                    )}
                   </div>
                 </div>
               </CardContent>
