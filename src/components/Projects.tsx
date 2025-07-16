@@ -9,37 +9,43 @@ const Projects = () => {
       title: "Scalable Real-Time News Summarization Engine",
       description: "Developed a news summarization platform using the Google T5 model. Automated workflows with AWS Lambda and DynamoDB, optimizing performance for real-time summarization and reducing latency at scale",
       tags: ["T5", "AWS Lambda", "DynamoDB", "Real-time Processing"],
-      category: "NLP"
+      category: "NLP",
+      link: "https://github.com/NateshReddy/Text-Summarisation-Pipeline/tree/main"
     },
     {
       title: "Efficient Scholarly Title Generation with Quantization",
       description: "Fine-tuned Flan-T5 LLMs on the LaMP dataset, achieving an 80% improvement in ROUGE scores. Applied quantization techniques, including QAT and BitsandBytes, to enhance performance and minimize memory usage",
       tags: ["Flan-T5", "Quantization", "QAT", "BitsandBytes", "LaMP"],
-      category: "NLP"
+      category: "NLP",
+      link: "https://github.com/NateshReddy/Personalising-Scholarly-Title-Generation-with-Fine-tuned-LLMs"
     },
     {
       title: "Leveraging LLMs for Biomedical Named Entity and Relation Extraction",
       description: "Formulated robust pipelines for Named Entity Recognition (NER) and Relation Extraction (RE) employing state-of-the-art transformer-based models, including BERT, BioBERT, and BioGPT, to extract chemical-protein interactions from biomedical texts",
       tags: ["BERT", "BioBERT", "BioGPT", "NER", "Relation Extraction"],
-      category: "Research"
+      category: "Research",
+      link: "https://github.com/NateshReddy"
     },
     {
       title: "PPO-Based HEX Game Agent with Self-Play and Reward Adaptive Strategy",
       description: "Built competitive HEX game agents using PPO and DQN, featuring custom Actor-Critic networks, dynamic reward adaptation, and multi-stage self-play training. Tuned hyperparameters with RayTune and achieved top-4 performance in tournament",
       tags: ["PPO", "DQN", "Actor-Critic", "RayTune", "RL"],
-      category: "Reinforcement Learning"
+      category: "Reinforcement Learning",
+      link: "https://github.com/NateshReddy/HexGame-PPO"
     },
     {
       title: "StudySuite: Multi-Agent LLM System for Interactive Lecture-Based Learning",
       description: "Designed and deployed an end-to-end multi-agent system using Fetch.ai's uAgents framework to convert recorded lectures into transcripts, generate interactive quizzes, auto-grade responses, and deliver personalized learning feedback powered by LLMs",
       tags: ["uAgents", "Multi-Agent", "LLMs", "Fetch.ai", "Education"],
-      category: "AI System"
+      category: "AI System",
+      link: "https://github.com/NateshReddy/StudySuite"
     },
     {
       title: "Automated PCB Defect Detection and Classification using Deep Learning",
       description: "Engineered a full PCB Failure Analyser automating the task of detecting and classifying defects in PCB to reduce human error percentage, significantly reducing the cost of manual inspection. The system is able to detect, extract and predict the type of defect in PCB with 95% accuracy",
       tags: ["Computer Vision", "PyTorch", "Object Detection", "Manufacturing"],
-      category: "Computer Vision"
+      category: "Computer Vision",
+      link: "https://github.com/NateshReddy/PCB-Failure-Analyser-playground"
     }
   ];
 
@@ -102,17 +108,12 @@ const Projects = () => {
                   </div>
                   
                   <div className="flex gap-2">
-                    {project.title === "Leveraging LLMs for Biomedical Named Entity and Relation Extraction" ? (
-                      <Button variant="outline" size="sm" className="flex-1" disabled>
+                    <Button variant="outline" size="sm" className="flex-1" asChild>
+                      <a href={project.link} target="_blank" rel="noopener noreferrer">
                         <Github className="h-4 w-4 mr-2" />
-                        Research Paper
-                      </Button>
-                    ) : (
-                      <Button variant="outline" size="sm" className="flex-1">
-                        <Github className="h-4 w-4 mr-2" />
-                        Code
-                      </Button>
-                    )}
+                        {project.title === "Leveraging LLMs for Biomedical Named Entity and Relation Extraction" ? "Profile" : "Code"}
+                      </a>
+                    </Button>
                   </div>
                 </div>
               </CardContent>

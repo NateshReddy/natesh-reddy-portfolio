@@ -31,7 +31,7 @@ const Contact = () => {
               className="bg-accent hover:bg-accent-glow text-accent-foreground shadow-lg hover:shadow-xl transition-all duration-300"
               asChild
             >
-              <a href="mailto:natesh@example.com" className="flex items-center justify-center">
+              <a href="mailto:natesh1199@gmail.com" className="flex items-center justify-center">
                 <Mail className="mr-2 h-5 w-5" />
                 Email
               </a>
@@ -44,7 +44,7 @@ const Contact = () => {
               asChild
             >
               <a 
-                href="https://linkedin.com" 
+                href="https://www.linkedin.com/in/nateshreddy/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="flex items-center justify-center"
@@ -61,7 +61,7 @@ const Contact = () => {
               asChild
             >
               <a 
-                href="https://github.com" 
+                href="https://github.com/NateshReddy" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="flex items-center justify-center"
@@ -75,9 +75,17 @@ const Contact = () => {
               variant="outline" 
               size="lg"
               className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 backdrop-blur-sm"
+              asChild
             >
-              <FileText className="mr-2 h-5 w-5" />
-              Resume
+              <a 
+                href="https://drive.google.com/file/d/1His-NqbfK3e5Z1WF_Z27OEy12qhrTnxa/view?usp=drive_link"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center"
+              >
+                <FileText className="mr-2 h-5 w-5" />
+                Resume
+              </a>
             </Button>
           </div>
         </div>
