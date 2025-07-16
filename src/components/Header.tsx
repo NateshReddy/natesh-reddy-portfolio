@@ -72,7 +72,7 @@ const Header = () => {
           <div className="hidden md:flex items-center space-x-4">
             <Button variant="ghost" size="icon" asChild>
               <a
-                href="https://github.com"
+                href="https://github.com/NateshReddy"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="GitHub"
@@ -82,7 +82,7 @@ const Header = () => {
             </Button>
             <Button variant="ghost" size="icon" asChild>
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/nateshreddy/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
@@ -92,7 +92,7 @@ const Header = () => {
             </Button>
             <Button variant="ghost" size="icon" asChild>
               <a
-                href="mailto:natesh@example.com"
+                href="mailto:natesh1199@gmail.com"
                 aria-label="Email"
               >
                 <Mail className="h-5 w-5" />
